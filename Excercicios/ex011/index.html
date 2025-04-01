@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir as imagens em vários dispositvos ou apenas de um zoom no navegador.</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="Imagens/P.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="Imagens/M.png" type="image/png">
+        <img src="Imagens/G.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Repoduzindo audios</h1>
+    <p>Teste para reproduzução de audios </p>
+    <h2>Maneira simples</h2>
+    <audio src="./midia/musica1.mp3" controls autoplay></audio>
+
+    <h2>Maneira recomendada</h2>
+    <p>Teste 2 para audio</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/musica2.mp3" type="audio/mpeg">
+        <source src="midia/musica2.ogg" type="audio/ogg">
+        <source src="midia/musica2.wav" type="audio/wav">   
+    </audio>
+    <p>Infelizmente seu navegador não tem suporte para a repodução deste audio.<a href="midia/musica2.mp3">Clique aqui</a> para baixar o arquivo em mp3</p>
+</body>
+</html>

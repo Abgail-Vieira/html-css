@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+    
+</head>
+<body>
+    <h1>Links</h1>
+    <mark>
+        <h2>Links Externos</h2>
+        <p>usamos  a tag <mark>a</mark>, e os  paramêtros <mark>"target _blank"</mark> e <mark>rel="external"</mark></mark>
+        </p>
+    <p>Para mais informações consultar o <a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-10-aula-2-links-internos-2/" target="_blank" rel="external">curso em video</a>, do Gustavo Guanabara</p>
+    <p>Ex.: 
+    <code style="background-color: rgb(195, 202, 202);">
+        &lt;p&gt; Para mais informações consultar o: &lt;a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-10-aula-2-links-internos-2/" target="_blank" rel="external" &gt;curso em video &lt;a&gt; , do Gustavo Guanabara
+    </code></p>
+
+    <p>Você pode pesquisar mais videos no <a href="https://www.youtube.com/" target="_blank" rel="external">Youtube</a>.</p>
+
+    <h2>Links Internos</h2>
+    <p>No link interno o parâmetro é <mark>"target_self", rel="prev" e rel="next"</mark>  indicando página principal e próxima página respectivamente.</p>
+    <p>Esta é a primeira página. Se você quiser acessar a página 002, <a href="pg002.html" target="_self" rel="next">Clique aqui.</a></p>
+
+    <h3>Acessando uma página que está dentro de um arquivo</h3>
+    <p>Para saber sobre notícias, clique em <a href="./Noticias/pagina003.html">Oeste Sem Filtro</a></p>
+
+    <h2>Links para Download</h2>
+    <p>Para criar um link de download, basta <mark>criar uma pasta com o arquivo desejado e no href, colocar o caminho (endereço/"URL") para este arquivo.</mark></p>
+    <p>Ex.:Você pode aprender mais linguagens de Desenvolvimento Web, fazendo do download do RoadMap nos links abaixo</p>
+    <ul type="square">
+        <li><a href="/RoadMap/MAPADEV.pdf" download="MAPADEV.pdf" type="application.pdf">Mapa em PDF</a></li>
+        <li><a href="RoadMap/MAPADEV.zip.zip" download="MAPADEV.zip" type="application.zip">Mapa Pasta compactada</a></li>
+
+    </ul>
+</body>
+</html>
