@@ -4,33 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        .form-f{
+            width: 60%;
+        }
+    </style>
 </head>
 <body>
     <h1>Select, datalist e textarea</h1>
-    <form action="cadastro.php">
-        <label for="iest">Estado</label>
-        <select name="estado" id="iedt">
-            <option value="" selected
-            >---Escolha---</option>
-            <optgroup label="Sudeste">
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="SP">São Paulo</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="ES">Espírito Santo</option>
-            </optgroup>
-            <optgroup label="Sul">
-                <option value="RS">Rio Grande do Sul</option>
-                <option value="PN">Paraná</option>
-                <option value="SC">Santa Catarina</option>
-            </optgroup>
-            <optgroup label="Centro-Oeste">
-                <option value="MT">Mato Grosso</option>
-                <option value="MS">Mato Grosso do Sul</option>
-            </optgroup>
-        </select>
+    <div class="form-f">
+        <form action="cadastro.php" method="post" autocomplete="off">
+            <fieldset>
+                <legend>Formulário Select</legend>
+                <label for="iest" ">Estado</label>
+                <select name="estado" id="iedt" required>
+                    <option value="" selected>---Escolha---</option>
+                    <optgroup label="Sudeste">
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="ES">Espírito Santo</option>
+                    </optgroup>
+                    <optgroup label="Sul">
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="PN">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                    </optgroup>
+                    <optgroup label="Centro-Oeste">
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+        </div>
 
+    <div class="form-f">
+            <fieldset>
+                <legend>Datalist</legend>
+                <label for="iprof">Profissão</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option>Professor</option>
+                    <option>Contador</option>
+                    <option>Pintor</option>
+                    <option >Desenvolvedor</option>
+                </datalist>
+            </fieldset>
+    </div>
 
-
-    </form>
+    <div>
+        <label for="imsg">Mensagem:</label><br>
+        <textarea name="msg" id="imsg" col="30" row="10" placeholder="Envie sua mensagem"></textarea>
+    </div>
+     
+     </form>
+     <button type="submit">Enviar</button>
+     <button type="reset">Limpar</button>
 </body>
 </html>
