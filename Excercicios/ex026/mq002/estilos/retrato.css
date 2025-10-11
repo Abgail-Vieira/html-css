@@ -1,2 +1,6 @@
 @charset "UFT-8";
 /*Modo portrait (em pé)*/
+body{
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
+}
