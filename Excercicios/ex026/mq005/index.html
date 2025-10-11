@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
     <link rel="stylesheet" href="estilos/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/media-query.css">
     <title>Document</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <span  id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -29,10 +30,20 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, iure facere cum atque rerum totam! Alias quibusdam architecto quae, voluptate voluptates nemo nisi sit harum inventore! Ut rem libero consequuntur molestias? Aliquid accusamus nemo dolor omnis optio, tempora quod consequuntur dicta voluptatum, magnam velit porro. Esse inventore quos amet voluptatibus.</p>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima omnis sed dicta dignissimos aut, nesciunt illo animi aliquid atque expedita dolor harum magnam vero repellat, porro placeat tempora voluptates maiores provident ex assumenda ipsam excepturi, saepe odit. Quibusdam, ad odio praesentium consequuntur omnis, culpa saepe nihil a nisi voluptate aliquam labore quidem ullam provident, earum et corrupti. Accusamus eaque atque necessitatibus amet explicabo quos laudantium nobis tempora quia unde ab facilis deserunt aperiam totam, laboriosam quaerat quam. Voluptatibus, doloremque dicta?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus pariatur dolor molestias in aut quae deserunt earum dicta labore, consequuntur sunt tempore voluptates qui recusandae, cupiditate dolore explicabo. Ut, odio. Pariatur facere enim incidunt accusantium illo impedit, voluptatibus placeat aperiam neque quisquam omnis officia error adipisci rem ad amet accusamus at. Et provident, repudiandae animi qui aliquid at fugit consectetur veritatis nulla quis rerum debitis repellat adipisci eveniet ex distinctio eaque quaerat illo! Assumenda voluptatibus velit iste ratione quas earum omnis! Exercitationem, dignissimos aliquid mollitia impedit, vel, nostrum quos itaque sit incidunt obcaecati quibusdam molestiae nihil corrupti assumenda inventore voluptas?</p>
         </article>
     </main>
 
     <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else {
+                itens.style.display ='none'
+            }
+        }
+
         function clickMenu() {
             if (itens.style.display == 'block'){
                 itens.style.display = 'none'
